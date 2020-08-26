@@ -1,5 +1,5 @@
 var TacoDancer = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
+  Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('tacobell');
 };
 
@@ -9,5 +9,5 @@ TacoDancer.prototype.constructor = TacoDancer;
 TacoDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
 
-  this.$node
+
 };

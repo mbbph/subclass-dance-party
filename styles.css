@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background: url(disco-dance-floor-background-footage-047297925_iconl.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color:#444;*/
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -26,5 +29,76 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-/* .dancer .tacobell{
-} */
+.blinkyDancer{
+  border-radius: 0px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  animation-name: spin1;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(aug___.png);
+}
+
+.tacobell{
+  border-radius: 0px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  animation-name: spin1;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(taco.png);
+}
+
+.margarita {
+  /* width: 0;
+  height: 0;
+  border-radius:0px;
+  border-left: 0px solid transparent;
+  border-top: 40px solid transparent;
+  border-right: 80px solid rgb(115, 119, 112);
+  border-bottom: 40px solid transparent; */
+  border-radius: 0px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  animation-name: spin1;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(margarita.png);
+}
+
+@keyframes spin1 {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.margarita:hover {
+  animation-name: spin2;
+}
+
+@keyframes spin2 {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(-360deg);
+  }
+}

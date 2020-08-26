@@ -1,5 +1,6 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('blinkyDancer');
   //debugger;
   //this.oldStep = this.step; //store old step function in oldStep property
   //console.log(this.step);
@@ -20,10 +21,3 @@ makeBlinkyDancer.prototype.step = function() {
   //Object.getPrototypeOf(makeBlinkyDancer.prototype).step.call(this);
   this.$node.toggle();
 };
-
-
-
-
-
-
-
